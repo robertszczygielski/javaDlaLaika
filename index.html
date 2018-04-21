@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>
+						<h3>Robert Szczygielski</h3>
+						<p><i>Java Developer</i></p>
+					</section>
+					<section>
+						<h2>Java dla laika,</h2>
+						<h3>czyli o programowaniu słów kilka</h3>
+					</section>
+					<section>
+						<img data-src="img/javaIsland.jpeg"/>		
+					</section>
+					<section>
+						<img height="43%" width="43%" data-src="img/jvmIsland.jpeg"/>
+					</section>
+					<section>
+						<img height="120%" width="120%" data-src="img/world.jpeg"/>
+					</section>
+
+				</section>				
+				<section>
+					<ul>
+						<li>Wprowadzenie do programowania</li>
+						<li>Filozofie programowania</li>
+						<li>OOP - object-oriented programming</li>
+					</ul>
+				</section>	
+				<section>
+					<h4>Wprowadzenie do programowania</h4>
+					<ul>
+						<li>Typy</li>
+						<li>Zmienne</li>
+						<li>Tablice</li>
+						<li>Instrukcje warunkowe</li>
+						<li>Pętle</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>Typy</h2>
+					</section>			
+					<section>
+						<img data-src="img/memories.jpeg"/>
+					</section>
+					<section>
+						<img data-src="img/ram.jpg"/>
+					</section>
+					<section>
+						<img data-src="img/storage.jpg"/>
+					</section>
+					<section>
+						<img data-src="img/storageAndEngeneer.jpg"/>
+					</section>
+					<section>
+						<img data-src="img/storageAndEngeneerAndFR.jpg"/>
+					</section>
+					<section>
+						<img data-src="img/allBox.jpeg"/>
+					</section>
+					<section>
+						<table style="width: 50%">
+						  <tr>
+						    <th><b>Type</b></th>
+						    <th><b>Range</b></th>
+						  </tr>
+						  <tr>
+						    <th>byte</th>
+						    <th>-128 .. 127</th>
+						  </tr>
+
+						  <tr>
+						    <th>short</th>
+						    <th>-32768 .. 32767</th>
+						  </tr>
+						  <tr>
+						    <th>int</th>
+						    <th>-2147483648 .. 2147483647</th>
+						  </tr>
+						  <tr>
+						    <th>long</th>
+						    <th>-9223372036854775808 .. 9223372036854775807</th>
+						  </tr>
+						  <tr>
+						    <th>float</th>
+						    <th>3,40282347 x 10<sup>38</sup> .. 1,40239846 x 10<sup>-45</sup></th>
+						  </tr>
+						  <tr>
+						    <th>double</th>
+						    <th>1,7976931348623157 x 10<sup>308</sup> .. 4,9406564584124654 x 10<sup>-324</sup></th>
+						  </tr>
+						  <tr>
+						    <th>boolean</th>
+						    <th>false .. true</th>
+						  </tr>
+						</table>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Zmienne</h2>
+					</section>
+					<section>
+						<img data-src="img/engeneerAndRule.jpg"/>
+					</section>
+					<section>
+						<img data-src="img/engeneerAndRuleAndBaners.jpg"/>
+					</section>
+					<section>
+						<img data-src="img/price.jpg"/>
+					</section>
+					<section>
+						<code><font color="red">int</font> <font color="#66ff33">nazwaZmiennej</font>;</code>
+						<br><br>
+						<code><font color="red">byte</font> <font color="#66ff33">innaNazwaZmiennej</font> = 10;</code> 
+					</section>
+
+				</section>
+				<section>
+					<section>
+						<h2>Tablice</h2>
+					</section>
+					<section>
+						<img data-src="img/queue.jpeg"/>
+					</section>
+					<section>
+						<code><font color="red">int</font> <font color="#66ff33">pierwszaTablica</font><font color="#6699ff">[]</font>;</code>
+						<br><br>
+						<code><font color="red">int</font><font color="#6699ff">[]</font> <font color="#66ff33">drugaTablica</font>;</code>						
+					</section>
+					<section>
+						<img data-src="img/index.jpg"/>
+					</section>
+					<section>
+						<code><font color="#66ff33">pierwszaTablica</font><font color="#6699ff">[2]</font></code>
+					</section>
+					<section>
+						<h3>Tablice 2D i 3D</h3>
+					</section>
+					<section>
+						<h3>2D</h3><br>
+						<img data-src="img/chess.jpeg"/><br>
+						<code><font color="red">int</font> <font color="#66ff33">pierwszaTablica</font><font color="#6699ff">[][]</font>;</code>
+					</section>
+					<section>
+						<h3>3D</h3><br>
+						<img data-src="img/rubick.jpeg"/><br>
+						<code><font color="red">int</font> <font color="#66ff33">pierwszaTablica</font><font color="#6699ff">[][][]</font>;</code>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Instrukcje warunkowe</h2>
+					</section>
+					<section>
+						<p>Kup chleb, a jak będą jajka to weź sześć.</p>
+					</section>
+					<section>
+						<p>Kup chleb, a jak będą jajka to weź sześć.</p>
+						<img data-src="img/eggs.png"/><br>
+					</section>
+					<section>
+						<p>Kup chleb, a jak będą jajka to weź sześć.</p>
+						<img data-src="img/eggs.png"/><br>
+						<img data-src="img/bread.png"/><br>
+					</section>
+					<section>
+						<img data-src="img/park.png"/>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Pętle</h2>
+					</section>
+					<section>
+						<img data-src="img/loop.jpg"/>
+					</section>
+					<section>
+						<img data-src="img/cookies.jpeg"/>
+					</section>
+					<section>
+						<img data-src="img/cookies2.jpeg"/>
+					</section>
+					<section>
+						<img data-src="img/cookies2.jpeg"/><br>
+						<img data-src="img/queue.jpeg"/>
+					</section>
+					<section>
+						<img data-src="img/cookieLoop.png"/>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Filozofie programowania</h2>
+					</section>
+					<section>
+						<h3>Religie programowania</h3>
+						<h3>Paradygmaty programowania</h3>
+					</section>
+					<section>
+						<ul>
+							<li>Programowanie obiektowe</li>
+							<li>Programowanie proceduralne</li>
+							<li>Programowanie strukturalne</li>
+							<li>Programowanie funkcyjne</li>
+							<li>Programowanie imperatywne</li>
+							<li>...</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>OOP - object-oriented programming</h2>
+					</section>
+					<section>
+						<img data-src="img/objects.jpeg"/>
+					</section>
+					<section>
+						<table>
+						  <tr>
+						    <td><img data-src="img/egg.jpeg"/></td>
+						    <td><img data-src="img/Microwave.jpg"/></td>
+						  </tr>
+						</table>
+					</section>
+					<section>
+						<h4>Zasady programowania objektowego</h4>
+						<ul>
+							<li>Klasa</li>
+							<li>Dziedziczenie</li>
+							<li>Abstrakcja</li>
+							<li>Polimorfizm</li>
+							<li>Hermetyzacja</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Klasa</h2>
+					</section>
+					<section>
+						<img data-src="img/cake.jpeg"/>
+					</section>
+					<section>
+						<img data-src="img/recept.jpeg"/>
+					</section>
+					<section>
+						<img data-src="img/buildingProject.jpg"/>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Dziedziczenie</h2>
+					</section>
+					<section>
+						<img data-src="img/darwin.jpg"/>
+					</section>
+					<section>
+						<img data-src="img/evolution.jpg"/>
+					</section>
+					<section>
+						<img data-src="img/hands.png"/>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Abstrakcja</h2>
+					</section>
+					<section>
+						<img data-src="img/fruits.jpg"/>
+					</section>
+
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
